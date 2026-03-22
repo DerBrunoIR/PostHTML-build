@@ -60,3 +60,17 @@ docker compose up -d --build
 | `*.page.html` | Page template | `./dist/` |
 | `*.comp.html` | Reusable component | `./build/` |
 
+## Building Process
+
+1. Find all HTML files in `src/`
+2. Parse each file to extract `<include>` tags
+3. Sort files so dependencies build first; abort if circular
+4. Process each file:
+   - Inline included components
+   - Replace {{ variables }} with JSON values
+   - Cache built components
+5. Write output:
+   - Pages (*.page.html) → dist/
+   - Components (*.comp.html) → build/ (cache)
+   - Other files → dist/
+   - Static files → copy to dist/
