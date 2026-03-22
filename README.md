@@ -38,7 +38,7 @@ dist
 ```
 
 See <a href="https://github.com/posthtml/posthtml-include">PostHTML</a> for more details, like parameters.
-
+`./src` contains an example website.
 
 ## Usage
 
