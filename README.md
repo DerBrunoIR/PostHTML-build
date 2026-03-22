@@ -67,10 +67,10 @@ docker compose up -d --build
 3. Sort files so dependencies build first; abort if circular
 4. Process each file:
    - Inline included components
-   - Replace {{ variables }} with JSON values
+   - Replace `{{ variables }}` with JSON values
    - Cache built components
 5. Write output:
-   - Pages (*.page.html) → dist/
-   - Components (*.comp.html) → build/ (cache)
-   - Other files → dist/
-   - Static files → copy to dist/
+   - Pages (`*.page.html`) → `dist/`
+   - Components (`*.comp.html`) → `build/` (cache)
+   - Other files → `dist/`
+   - Static files → copy to `dist/`
