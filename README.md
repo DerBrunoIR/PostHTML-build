@@ -77,7 +77,7 @@ docker compose up -d --build
 
 
 ## Hot Reloading (Hack)
-
+Bash:
 ```bash
-while 1; do sleep 2; npm run build; done;
+while 1; do sleep 1; npm run build; done;
 ```
