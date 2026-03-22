@@ -4,7 +4,7 @@ Template repository for building static websites with minimal effort.
 
 **Features**: 
 - File System Routing,
-- HTML Components via <a href="https://github.com/posthtml/posthtml-include">PostHTML</a>,
+- HTML Components via <a href="https://github.com/posthtml/posthtml-include">PostHTML-include</a>,
 - ready for serving via docker.
 
 Example source tree:
