@@ -4,6 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      # platforms:
+      #   - "linux/amd64"
+      #   - "linux/arm64"
     container_name: website
     restart: unless-stopped
     volumes:
