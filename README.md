@@ -3,9 +3,9 @@
 This template repository contains scripts and config files for building HTML from a source tree of modular HTML files and serving the resulting HTML files via an Nginx docker container.
 
 **Features**: 
-- File System Routing,
-- HTML Components via <a href="https://github.com/posthtml/posthtml-include">PostHTML-include</a>,
-- ready for serving via docker.
+- Source tree based routing via Nginx,
+- HTML modules via <a href="https://github.com/posthtml/posthtml-include">PostHTML-include</a>,
+- distributable via docker container.
 
 Example source tree:
 ```
