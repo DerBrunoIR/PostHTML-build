@@ -63,7 +63,8 @@ Serve changing files from `./dist` via nginx docker container:
 docker compose up -d --build
 ```
 For distribution, comment the `./dist` volume inside the docker compose file and rebuild the container.
-This volume is only needed for making new builds available to Nginx.
+This volume allows Nginx to see changes made to files in the `./dist` directory. 
+On build time `./dist` is also copied into the container.
 
 ## File Conventions
 
