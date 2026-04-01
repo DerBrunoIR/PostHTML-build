@@ -16,15 +16,20 @@ src
 │   ├── footer.comp.html
 │   ├── header.comp.html
 │   └── nav.comp.html
+├── images
+│   └── logo.png
 └── index.page.html
 ```
 
-Resulting dist tree (containing merged HTML files):
+Resulting dist tree (contains non-HTML files and merged HTML modules):
 ```
 dist
 ├── blog
 │   └── index.html
+├── images
+│   └── logo.png
 └── index.html
+
 ```
 
 ## Include Syntax
