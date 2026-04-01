@@ -1,6 +1,6 @@
 # PostHTML-static
 
-Template repository for building static websites with minimal effort. 
+This template repository contains scripts and config files for building HTML from a source tree of modular HTML files and serving the resulting HTML files via an Nginx docker container.
 
 **Features**: 
 - File System Routing,
@@ -37,21 +37,28 @@ dist
 <include src="/components/header.comp.html"></include>
 ```
 
-See <a href="https://github.com/posthtml/posthtml-include">PostHTML</a> for more details, like parameters.
+See <a href="https://github.com/posthtml/posthtml-include">PostHTML-include</a> for more details, like parameters.
 `./src` contains an example website.
 
 ## Usage
 
 Build website:
 ```bash
+# setup
 npm install # install build.js dependencies
-npm run build # run build.js
+
+# build pages once
+npm run build
+# build pages every few seconds. 
+npm run dev
 ```
 
-Create and run container with mounted `./dist` volume:
+Serve changing files from `./dist` via nginx docker container:
 ```bash
 docker compose up -d --build
 ```
+For distribution, comment the `./dist` volume inside the docker compose file and rebuild the container.
+This volume is only needed for making new builds available to Nginx.
 
 ## File Conventions
 
@@ -75,9 +82,3 @@ docker compose up -d --build
    - Other files → `dist/`
    - Static files → copy to `dist/`
 
-
-## Automatic Reloading
-Bash:
-```bash
-while 1; do sleep 1; npm run build; done;
-```
