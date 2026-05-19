@@ -1,5 +1,8 @@
 # PostHTML-static
 
+> [!tip]
+> In combination with design agents (like Google Stitch) that output HTML, this template library can be especially useful for fast deployments.
+
 Developing, building, serving and distributing static websites should be not harder than writing HTML.
 The JS library PostHTML-include provides an HTML `include` tag for importing other HTML moduls.
 Our build script can resolve nested HTML moduls into servable HTML files.
