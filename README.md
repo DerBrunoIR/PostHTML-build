@@ -5,12 +5,12 @@
 
 Developing, building, serving and distributing static websites should be not require shipping heavy JS frameworks.
 The JS library PostHTML-include provides an HTML `include` tag for importing other HTML moduls.
-Our build script can resolve nested HTML moduls into servable HTML files.
+Our build script can compile nested HTML moduls into servable HTML files.
 Nginx is configured to serve the file tree via HTTP. 
 We refer to the served file tree as *dist tree*. 
-And the preconfigured docker container is used for distributing the dist tree and Nginx.
+And the preconfigured docker container is used for distributing the dist tree together with Nginx.
 
-The build script diffirentiates between components and pages via the file extension.
+The build script differentiates between components and pages (via the file extension).
 - A page can be accessed by users.
 - A component can only be accessed if it is included in a page. 
 
