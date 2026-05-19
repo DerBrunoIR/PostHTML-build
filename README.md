@@ -12,7 +12,7 @@ And the preconfigured docker container is used for distributing the dist tree to
 
 The build script differentiates between components and pages (via the file extension).
 - A page can be accessed by users.
-- A component can only be accessed if it is included in a page. 
+- A component can only be accessed if it is directly or indirectly included in a page. 
 
 Example source tree:
 ```
